@@ -1,3 +1,47 @@
+/*Cree un objeto constructor para el e-commerce
+con 
+
+*/
+class Producto{
+    constructor(id,nombre,autor,descripcion, precio){
+            this.id_Producto = id
+            this.nombre_Producto = nombre
+            this.autor_Producto = autor
+            this.descripcion_Producto = descripcion
+            this.precio_Producto = precio
+          }
+}
+
+const producto1 = new Producto("01","nombre01","autor01","Lorem Ipsum is simply dummy text of the printing and typesetting industry.","$120000")
+
+const producto2 = new Producto("02","nombre02","auto02","Lorem Ipsum is simply dummy text","$75000")
+
+const producto3 = new Producto("03","nombre03","autor3","Lorem Ipsum is simply dummy text","110000")
+
+const producto4 = new Producto("04","nombre04","autor4","Lorem Ipsum is simply dummy text","10000")
+
+const producto5 = new Producto("05","nombre05","autor5","Lorem Ipsum is simply dummy text","80000")
+
+const producto6 = new Producto("06","nombre06","autor6","Lorem Ipsum is simply dummy text","10000")
+
+// Arrays
+const productos = [producto1, producto2, producto3, producto4, producto5, producto6]
+
+console.table(productos)
+
+const producto = new Producto(prompt("Ingrese el nombre del producto"), prompt ("Ingrese el autor"))
+
+productos.push(producto)
+
+console.table(productos)
+
+
+
+
+
+
+/*
+
 const PRODUCTOS_NOTART =[
     { 
         id: '1',
@@ -30,10 +74,18 @@ const PRODUCTOS_NOTART =[
         descripcion: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry}',
         img: '#',
         categoria: 'categoria d',
-    }
+    },
+    {
+        id: '5',
+        nombre: 'Prodcuto 5',
+        precio:35000,
+        descripcion: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
+        img: '#',
+        categoria:'categoria f',
+    } 
 
 ];
-/* Propiedades  */ 
+ 
 class  Producto{
     constructor(id, nombre, precio, descripcion, img, categoria){
         this.id = id;
@@ -97,7 +149,6 @@ console.log(obtenerTotal(carrito));
 
 
 
-/*
 inputText.addEventListener("input", () => {
     console.log(inputText.value)
 })
