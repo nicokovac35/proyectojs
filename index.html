@@ -18,19 +18,53 @@
 </head>             
 <body>
         <!--HEADER-->
-  <header>
-    <div class="navegador">     
-       <a href="#" class="logo">Ecommerce</a>
-       <i class="fa-solid fa-bag-shopping"></i>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Home
+                    <span class="visually-hidden">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
 
-    </div>  
-  </header> 
-  <!--CARRITO-->
-  <div class="carrito">
-    
+        <!--SubNAV-->
 
-  </div>
-
+        <div class="subnav">
+            <button id="login" class="btn btn-primary"> login</button>
+            <a href="#" class="carrito">Carrito</a>
+        </div>
 
   <!--PRODUCTOS-->
 
@@ -42,7 +76,8 @@
           <img src="./img/zapatilla.jpg" alt="" class="imagen-producto">
           <h2 class=" titulo-producto">Producto Producto</h2>
           <p class="descripcion-producto">Descripcion descripcion descripcion descripcion descripcion </p>
-          <div class="precio-producto">$100
+          <div class="precio-producto">Precio: $100
+            <button id="agregarFavoritos" class="fa-solid fa-heart"></button>
             <i class="fa-solid fa-cart-shopping"></i>
             </div>
         </div>
@@ -51,7 +86,8 @@
           <img src="./img/zapatilla.jpg" alt="" class="imagen-producto">
           <h2 class=" titulo-producto">Producto Producto</h2>
           <p class="descripcion-producto">Descripcion descripcion descripcion descripcion descripcion </p>
-          <div class="precio-producto">$100
+          <div class="precio-producto">Precio: $100
+            <button id="agregarFavoritos" class="fa-solid fa-heart"></button>
           <i class="fa-solid fa-cart-shopping"></i>
           </div>
         </div>
@@ -105,6 +141,14 @@
         </div>
       </div>
   </section>
+
+  <div class="mas-info">
+      <div class="email">
+        <h3 class="titulo-email">Ingrese su correo para recibir mas infor de ofertas u otros...</h3>
+        <button id="enviarEmail">Enviar Correo</button>
+
+      </div>
+  </div>>
 
 
 
