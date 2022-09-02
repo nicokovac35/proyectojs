@@ -43,6 +43,7 @@ botonLightMode.addEventListener('click', () => {
 // Stock 
 */
 
+// Agregar carrito
 const contenedorProductos = document.getElementById("contenedor-productos")
 
 let carrito = []
@@ -81,3 +82,12 @@ let productosStock = [
    
 
 ]
+
+//libreria
+Swal.fire({
+    position: 'top-end',
+    icon: 'success',
+    title: 'Agregado Correctamente',
+    showConfirmButton: true,
+    timer: 1500
+  })
