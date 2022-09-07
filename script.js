@@ -1,15 +1,27 @@
-class Producto {
-    constructor(id, nombre, cantidad, descripcion, precio, talla, img,marca,stock){
-        this.id = id
-        this.nombre = nombre
-        this.marca = marca
-        this.precio = precio
-        this.stock = stock
 
-    }
-}
+/*----fetch local*/
 
-//Agregue un logeo , pero no se si podra poner un sweet alert dentro de otro?
+const divProductos = document.getElementById("divProductos")
+
+fetch('./json/productos.json')
+.then(response => response.json())
+.then(productos => {
+    productos.forEach((producto, indice) => {
+        divProductos.innerHTML += `
+            <div class="card" id="producto${indice}" style="width: 18rem;top:18 rem;margin:5px;p">
+            <img src="./img/zapatilla.jgp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">${producto.nombre}</h5>
+                    <p class="card-text">Marca:${producto.marca}</p>
+                    <p class="card-text">Precio:${producto.precio}</p>
+                    <p class="card-text">Stock: ${producto.stock}</p>
+                <button class=" btn btn-yellow">Agregar al carrito</button>
+            </div>
+        </div>
+       ` 
+    });
+
+})
 
 
 const botonLogin = document.getElementById("login")
@@ -62,40 +74,4 @@ botonEnviarCorreo.addEventListener("click",() =>{
 })
 
 
-/*----fetch local*/
-
-fetch('./json/productos.json')
-.then(response => response.json())
-.then(productos => console.log(productos))
-
-// console.log($productos)
-
-
-// Agregar carrito
-const contenedorProductos = document.getElementById("contenedor-productos")
-
-let carrito = []
-
-productosStock.forEach((producto) =>{
-    const div = document.createElement("div")
-    div.classList.add("producto")
-    div.innerHTML = `
-        <img src="${producto.img} alt="">
-        <h3>${producto.nombre} </h3>
-        <p>${producto.descripcion}</p>
-        <p>Talla: ${producto.talla}</p>
-        <p class="precioProducto">Precio:$ ${producto.precio}</p>
-        <button id="agregar${producto.id}" class="boton-agregar">Agregar <span class="material-symbols-outlined">
-        shopping_cart 
-        </span> 
-        </buttom>
-    
-    `
-    contenedorProductos.appendChild(div)
-})
-
-const agregarAlcarrito = (proID) => {
-    const item = productosStock.find((prod) =>  prod.id === prodID)
-    carrito.push(item)
-}
 

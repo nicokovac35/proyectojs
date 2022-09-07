@@ -3,25 +3,46 @@
         "id": 1, 
         "nombre":"Chuck 70Vitange Canvas", 
         "stock": 15,     
-        "precio": 12000,  
-        "img": "#" 
+        "precio": 50000,  
+        "img": "./img/zapatilla.jpg" 
     
     },
     {
-        "id": 1, 
-        "nombre":"Chuck 70Vitange Canvas", 
-        "stock": 15,     
-        "precio": 12000,  
+        "id": 2, 
+        "nombre":"Chuck Pro Camo Peac", 
+        "stock": 30,     
+        "precio": 60000,  
         "img": "#"
     
     },
     {
-        "id": 1, 
-        "nombre":"Chuck 70Vitange Canvas", 
-        "stock": 15,     
-        "precio": 12000,  
+        "id": 3, 
+        "nombre":"Chuck All Star Classic", 
+        "stock": 12,     
+        "precio": 62000,  
         "img": "#"
     
+    },
+    {
+        "id": 3, 
+        "nombre":"Chuck All Star Classic", 
+        "stock": 12,     
+        "precio": 62000,  
+        "img": "#"
+    },
+    {
+        "id": 3, 
+        "nombre":"Chuck All Star Classic", 
+        "stock": 12,     
+        "precio": 62000,  
+        "img": "#"
+    },
+    {
+        "id": 3, 
+        "nombre":"Chuck All Star Classic", 
+        "stock": 12,     
+        "precio": 62000,  
+        "img": "#"
     }
  
    
