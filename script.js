@@ -62,6 +62,10 @@ botonEnviarCorreo.addEventListener("click",() =>{
 })
 
 
+/*----fetch*/
+
+fetch('./json/productos.json')
+
 /*
 let darkMode
 
@@ -126,14 +130,6 @@ const agregarAlcarrito = (proID) => {
 
 
 // Stock
-let productosStock = [
-    {id: 1, nombre:" Producto 1", cantidad: 1, descripcion: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto", precio: 12000, talla: "XL", img: "#", tipo: "TipoA",},
-    {id: 1, nombre:" Producto 1", cantidad: 1, descripcion: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto", precio: 12000, talla: "XL", img: "#", tipo: "TipoA",},
-    {id: 1, nombre:" Producto 1", cantidad: 1, descripcion: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto", precio: 12000, talla: "XL", img: "#", tipo: "TipoA",},
-    {id: 1, nombre:" Producto 1", cantidad: 1, descripcion: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto", precio: 12000, talla: "XL", img: "#", tipo: "TipoA",},
-    {id: 1, nombre:" Producto 1", cantidad: 1, descripcion: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto", precio: 12000, talla: "XL", img: "#", tipo: "TipoA",},
-   
 
-]
 
 //libreria

@@ -1,0 +1,29 @@
+ [
+    {
+        "id": 1, 
+        "nombre":"Chuck 70Vitange Canvas", 
+        "stock": 15,     
+        "precio": 12000,  
+        "img": "#" 
+    
+    },
+    {
+        "id": 1, 
+        "nombre":"Chuck 70Vitange Canvas", 
+        "stock": 15,     
+        "precio": 12000,  
+        "img": "#"
+    
+    },
+    {
+        "id": 1, 
+        "nombre":"Chuck 70Vitange Canvas", 
+        "stock": 15,     
+        "precio": 12000,  
+        "img": "#"
+    
+    }
+ 
+   
+
+]
