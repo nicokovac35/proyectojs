@@ -62,43 +62,14 @@ botonEnviarCorreo.addEventListener("click",() =>{
 })
 
 
-/*----fetch*/
+/*----fetch local*/
 
 fetch('./json/productos.json')
+.then(response => response.json())
+.then(productos => console.log(productos))
 
-/*
-let darkMode
+// console.log($productos)
 
-if(localStorage.getItem("darkMode")) { //null si no existe la key
-    darkMode = localStorage.getItem("darkMode") //consulto el local storage
-} else {
-    localStorage.setItem("darkMode", "light") //Creo
-}
-
-if(darkMode == "dark") {
-    document.body.classList.add('darkMode')
-}
-
-const botonDarkMode = document.getElementById("botonDarkMode")
-const botonLightMode = document.getElementById("botonLightMode")
-const botonProductos = document.getElementById("botonProductos")
-const divProductos = document.getElementById("divProductos")
-
-botonDarkMode.addEventListener('click', () => {
-   // document.body.style.backgroundColor = "black"
-   // document.body.style.color = "white"
-   document.body.classList.add('darkMode')
-   localStorage.setItem("darkMode", "dark")
-})
-
-botonLightMode.addEventListener('click', () => {
-   // document.body.style.backgroundColor = "white"
-   // document.body.style.color = "black"
-   document.body.classList.remove('darkMode')
-   localStorage.setItem("darkMode", "light")
-})
-// Stock 
-*/
 
 // Agregar carrito
 const contenedorProductos = document.getElementById("contenedor-productos")
@@ -128,8 +99,3 @@ const agregarAlcarrito = (proID) => {
     carrito.push(item)
 }
 
-
-// Stock
-
-
-//libreria
