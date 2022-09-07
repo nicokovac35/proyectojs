@@ -15,7 +15,7 @@ fetch('./json/productos.json')
                     <p class="card-text">Marca:${producto.marca}</p>
                     <p class="card-text">Precio:${producto.precio}</p>
                     <p class="card-text">Stock: ${producto.stock}</p>
-                <button class=" btn btn-yellow">Agregar al carrito</button>
+                <button class=" btn btn-dark">Agregar al carrito</button>
             </div>
         </div>
        ` 
