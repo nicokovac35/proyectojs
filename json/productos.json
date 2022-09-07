@@ -12,7 +12,7 @@
         "nombre":"Chuck Pro Camo Peac", 
         "stock": 30,     
         "precio": 60000,  
-        "img": "#"
+        "img": "./img"
     
     },
     {
@@ -24,24 +24,66 @@
     
     },
     {
-        "id": 3, 
-        "nombre":"Chuck All Star Classic", 
+        "id": 4, 
+        "nombre":"Chuck Taylor All Star Lugged", 
+        "stock": 9,     
+        "precio": 80000,  
+        "img": "#"
+    },
+    {
+        "id": 5, 
+        "nombre":"All Star Slide", 
+        "stock": 17,     
+        "precio":70000,  
+        "img": "#"
+    },
+    {
+        "id": 6, 
+        "nombre":"Chuck Taylor All Star All Terrain", 
         "stock": 12,     
+        "precio": 135000,  
+        "img": "#"
+    },
+    {
+        "id": 7, 
+        "nombre":"Custom Chuck Taylor All Start Clemson University Tigers By You", 
+        "stock": 20,     
         "precio": 62000,  
         "img": "#"
     },
     {
-        "id": 3, 
-        "nombre":"Chuck All Star Classic", 
+        "id": 8, 
+        "nombre":"Run Star Motion Platform", 
         "stock": 12,     
+        "precio": 12000,  
+        "img": "#"
+    },
+    {
+        "id": 9, 
+        "nombre":"Chuck Taylor All Star Lugged 2.0 Counter Climate", 
+        "stock": 21,     
+        "precio": 130000,  
+        "img": "#"
+    },
+    {
+        "id": 10, 
+        "nombre":"Check Taylor All Star Berkshire Boot", 
+        "stock": 11,     
         "precio": 62000,  
         "img": "#"
     },
     {
-        "id": 3, 
-        "nombre":"Chuck All Star Classic", 
-        "stock": 12,     
-        "precio": 62000,  
+        "id": 11, 
+        "nombre":"Chuck Taylor All Star Deco Stitch", 
+        "stock": 19,     
+        "precio": 70000,  
+        "img": "#"
+    },
+    {
+        "id": 12, 
+        "nombre":"Chuck Taylor All Star Utility All Terrain", 
+        "stock": 30,     
+        "precio": 130000,  
         "img": "#"
     }
  
