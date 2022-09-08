@@ -1,6 +1,7 @@
 
 /*-links de estilos font-family: 'Mulish', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;600&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap');
 
 body{
     max-width: 1200px;
@@ -15,6 +16,11 @@ header{
     
 }
 
+.container-fluid{
+    background-color: black;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+}
 .navergador{
     display:flex;
     align-items:center;
@@ -36,7 +42,7 @@ header{
 }
 /*carrito*/
 .subnav{
-    position:fixed;
+
     top:60px;
     right:0;
     width:300px;
