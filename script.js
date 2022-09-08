@@ -3,6 +3,8 @@
 
 const divProductos = document.getElementById("divProductos")
 
+const cargarProductos = document.getElementById("")
+
 fetch('./json/productos.json')
 .then(response => response.json())
 .then(productos => {
@@ -15,7 +17,8 @@ fetch('./json/productos.json')
                     <p class="card-text">Marca:${producto.marca}</p>
                     <p class="card-text">Precio:${producto.precio}</p>
                     <p class="card-text">Stock: ${producto.stock}</p>
-                <button  class=" btn btn-dark">Agregar al carrito</button>
+                <button id="AgregarAlCarrito" class=" btn btn-dark">Agregar al carrito</button>
+                <button id="AgregarAFavoritos" class=" btn btn-dark"> A Favoritos</button>
             </div>
         </div>
        ` 

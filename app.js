@@ -1,3 +1,4 @@
+import Swal from 'sweetalert2/dist/sweetalert2.js'
 
 const botonLogin = document.getElementById("login")
 
@@ -19,7 +20,7 @@ botonLogin.addEventListener("click",() => {
 
 // en cada caja de producto tiene un corazon para agregar a favoritos
 
-const botonAgregarFavoritos = document.getElementById("agregarFavoritos")
+const botonAgregarFavoritos = document.getElementById("AgregarAFavoritos")
 
 botonAgregarFavoritos.addEventListener("click",() => {
     Swal.fire({
@@ -32,7 +33,7 @@ botonAgregarFavoritos.addEventListener("click",() => {
 
 // Ingrese un input de correo con sweetalert2
 
-const botonEnviarCorreo = document.getElementById("enviarEmail2")
+const botonEnviarCorreo = document.getElementById("enviarEmail")
 
 botonEnviarCorreo.addEventListener("click",() =>{ 
         Swal.fire({
