@@ -1,22 +1,16 @@
-
+const divProductos = document.getElementById("divProductos")
 /*----fetch local*/
-//fetch('./json/productos.json')
-//.then(response => response.json())
-//.then(productos => {
+fetch('./json/productos.json')
+.then(response => response.json())
+.then(productos => {
     
 
-//})
+})
 
 
-const divProductos = document.getElementById("divProductos")
-const botonProductos = document.getElementById("botonProductos")
-const inputProducto = document.getElementById("inputProducto")
 
-const traerProductos = async () => {
-    const response = await fetch('./json/productos.json')
-    const productos = await response.json()
-    return productos
-}
+
+
 
 function mostrarProductos(arraysProductos) {
     arraysProductos.forEach((producto, indice) => {
