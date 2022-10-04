@@ -12,9 +12,14 @@ fetch('./json/productos.json')
                 <p class="card-text">Marca:${producto.marca}</p>
                 <p class="card-text">Precio:${producto.precio}</p>
                 <p class="card-text">Stock: ${producto.stock}</p>
-            <button id="AgregarAlCarrito" class=" btn btn-dark">Agregar al carrito</button>
-            
-            <button id="AgregarAFavoritos" class=" btn btn-dark"> A Favoritos</button>
+
+                <ul class="iconos2">
+                    <li><i class='bx bx-heart-circle' ></i></li>
+                    <li><i class='bx bx-search'></i></li>
+                    <li><i class='bx bxs-cart-add'></i></li>
+                </ul>
+            <button id="AgregarAlCarrito" class=" btn1">Comprar</button>
+            <button id="AgregarAFavoritos" class=" btn2"> Ver Mas</button>
             
         </div>
     </div>
