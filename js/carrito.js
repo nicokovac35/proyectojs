@@ -1,11 +1,10 @@
-class Carrito {
+let cartIcon =document.querySelector("#carrito-icono");
 
-    comprarProducto(e){
-        e.preventDefault();
-        if(e.target.classList.contains('AgregarAlCarrito')){
-            const producto = e.target.parentElement.parentElement;
-           // this.leerDatosProducto(producto);
-           console.log(producto);
-        }
-    }
+let cart = document.querySelector("AgregarAlCarrito");
+
+let closeCart =document.querySelector("#close-cart");
+
+cartIcon.onclick = () =>{
+    cart.classList.add("active");
 }
+
