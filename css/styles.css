@@ -541,15 +541,15 @@ bannerfinal-form::placeholder{
   .cart-precio{
     font-weight: 500;
   }
-  .cart-cantidad{
+  .cart-cantidad {
     border: 1px solid #212121;
     outline-color: #350808;
-    width:40px;
+    width:2.4rem;
     text-align: center;
     font-size:16px;
   }
-  .cart-borrar{
-    font-size:24px;
+  .cart-remove{
+    font-size:50px;
     color:rgb(33, 33, 32);
     cursor:pointer;
   }
