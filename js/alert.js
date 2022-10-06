@@ -2,9 +2,32 @@
  	
  
         Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'Something went wrong!',
-            footer: '<a href="">Why do I have this issue?</a>'
-          })
-    })
+            position: 'top-end',
+            icon: 'success',
+            title: 'Perfect! ',
+            text: 'Te enviaremos todo lo que necesitas!',
+            width: 300,
+            padding: '3em',
+            color: '#716add',
+            showCloseButton: true,
+  
+            
+          });
+    });
+
+    
+    $('#click-heart').on('click',function(){
+
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Agregado a favoritos',
+            showConfirmButton: false,
+            timer: 1500
+          });
+        
+    });
+
+
+
+   

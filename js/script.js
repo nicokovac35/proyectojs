@@ -14,7 +14,7 @@ fetch('./json/productos.json')
                 <p class="card-text">Stock: ${producto.stock}</p>
 
                 <ul class="iconos2">
-                    <li><i class='bx bx-heart-circle' ></i></li>
+                    <li><i id="click-corazon" class='bx bx-heart-circle' ></i></li>
                     <li><i class='bx bx-search'></i></li>
                     <li><i class='bx bxs-cart-add'></i></li>
                 </ul>
@@ -23,6 +23,11 @@ fetch('./json/productos.json')
             
         </div>
     </div>
+
+    
         `
-    })
+    
+    
+});
+
 })
