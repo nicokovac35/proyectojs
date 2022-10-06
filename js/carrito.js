@@ -1,10 +1,13 @@
+// el carrito
 let cartIcon =document.querySelector("#carrito-icono");
+let cart =document.querySelector(".cart");
+let closeCart =document.querySelector("#cerrar-cart");
 
-let cart = document.querySelector("AgregarAlCarrito");
 
-let closeCart =document.querySelector("#close-cart");
-
-cartIcon.onclick = () =>{
+cartIcon.onclick = () => {
     cart.classList.add("active");
-}
+}  
 
+closeCart.onclick = () => {
+    cart.classList.remove("active");
+}
