@@ -89,6 +89,12 @@ li {
     color:#350808; 
 }
 
+.bx bxs-cart-alt{
+
+    font-size:30px;
+}
+
+
 
 /*---Iconos, logi-buscador-favoritos-carrito*/
 
@@ -497,99 +503,135 @@ bannerfinal-form::placeholder{
 
   /*---carrito---*/
 
-  .cart{
-    position:fixed;
-    top: 0;
-    right: -100%;
-    width:360px;
-    min-height:100vh;
-    padding:25px;
-    background-color:#fff;
-    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%); 
-    transition:0.3s;
-  }
-  .cart.active {
-    right:0;
-  }
-  .cart-titulo{
-    text-align:center;
-    font-size:60px;
-    font-weight:600;
+  /*--icono carrito--*/
 
-  }
-  .cart-caja{
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    align-items: center;
-    gap: 15px;
-    margin-top:18px;
-  }
-  .cart-img{
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    padding: 10px;
-  }
-  .detalle-caja{
-    display: grid;
-    row-gap:0.5rem;
-  }
-  .cart-producto-titulo{
-    font-size:26px;
-    text-transform: uppercase;
-  }
-  .cart-precio{
-    font-weight: 500;
-  }
-  .cart-cantidad {
-    border: 1px solid #212121;
-    outline-color: #350808;
-    width:2.4rem;
-    text-align: center;
-    font-size:16px;
-  }
-  .cart-remove{
-    font-size:50px;
-    color:rgb(33, 33, 32);
-    cursor:pointer;
-  }
-  
-  .total{
-    display: flex;
-    justify-content: flex-end;
-    margin-top:25px;
-    border-top: 1px solid #212121;
-  }
-  .total-titulo{
-    font-size:16px;
-    font-weight:600;
-  }
-  .total-precio{
-    margin-left: 8px;
-  }
-  .btn-comprar{
-    border: none;
-    background-color:yellow;
-    display: flex;
-    margin: 24px auto 0 auto ;
-    padding:12px 20px;
-    font-size: 25px;
-    font-weight:300;
+  #cart-icon {
+    font-size:40px;
     cursor: pointer;
     color:#212121;
   }
-  .btn-comprar:hover{
-    background-color:#350808;
+.ventana-carrito{
+    position:fixed;
+    top: 0;
+    right: -100%;
+    width: 400px;
+    min-height: 100vh;
+    padding:20px;
+    background-color: #fff;
+    color:#212121;
+    box-shadow: 0 0 10px rgba(0 4% 15% / 10);
+    border: solid 3px #212121;
+    transition: 0.3s;
+}
+.ventana-carrito.active{
+    right:0;
+
+}
+.ventana-carrito-titulo{
     color:#fff;
-  }
-  #cerrar-cart{
-    position:absolute;
-    top: 1rem;
-    right:0.8rem;
-    font-size:2rem;
-    color: #212121;
+    font-family: 'Inconsolata', monospace;
+}
+.ventana-carrito-contenido{
+    display: gird;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top:1rem;
+}
+
+.ventana-carrito-img{
+    width:100%;
+    height:200px;
+    object-fit: contain;
+    padding:10px;
+}
+.detalles-carrito{
+    display: grid;
+    row-gap: 0.5rem;
+}
+.carrito-box-titulo{
+    font-size:25px;
+    text-transform: uppercase;
+    align-items: center;
+}
+.carrito-precio{
+    font-weight: 500;
+}
+carrito-cantidad{
+    border: 1px solid #ccc;
+    outline-color: #350808;
+    width:2.4rem;
+    text-align: center;
+    font-size:1rem;
+}
+
+.cart-remove{
+    font-size:24px;
+    color: #fff;
     cursor: pointer;
-  }
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top:25px;
+    border-top: 1px solid #350808;
+}
+.total-titulo{
+    font-size:20px;
+    font-weight:600;   
+}
+.total-precio{
+    margin-left: 10px;
+}
+.btn-buy{
+    display:flex;
+    margin: 30px auto 0 auto ;
+    padding: 10px;
+    border: none;
+    background-color:#212121;
+    color: #fff;
+    font-size:40px;
+    font-weight: 500;
+    cursor:pointer;
+}
+.btn-buy:hover{
+    background-color:yellow;
+    color: #212121;
+}
+#close-ventana-carrito{
+    position:absolute;
+    top:1rem;
+    right:1rem;
+    font-size: 2rem;
+    color: #212121;
+    cursor:pointer;
+}
 
 
+/*Boton de info*/
+.bx bx-star{
+    align-items: center;
 
+
+}
+.btn-formulario{
+    border:none;
+    background-color:yellow;
+    color: #212121;
+    font-size:30px;
+    padding:5px;
+}
+
+.head-footer{
+    background-color:darkgray;
+    padding:5px;
+    font-size:60px;
+    color: #212121;
+
+}
+
+footer-titulo{
+    font-size:30px;
+    background-color:yellow;
+
+}
