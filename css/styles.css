@@ -602,11 +602,19 @@ carrito-cantidad{
     position:absolute;
     top:1rem;
     right:1rem;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #212121;
     cursor:pointer;
 }
 
+
+.cart-remove{
+    
+    right:3rem;
+    font-size: 3rem;
+    color: #212121;
+    cursor:pointer;
+}
 
 /*Boton de info*/
 .bx bx-star{
