@@ -1,4 +1,5 @@
 
+
 const contenedorProductos = document.getElementById('contenedor-productos')
 
 
@@ -39,6 +40,7 @@ stockProductos.forEach((producto) => {
     
     <p>Talla: ${producto.talle}</p>
     <p class="precioProducto">Precio:$ ${producto.precio}</p>
+    <button id="ver${producto.id}" class="boton-ver">Ver MAS</button>
     <button id="agregar${producto.id}" class="boton-agregar"></i>Agregar </button>
 
     `
@@ -88,7 +90,7 @@ const eliminarDelCarrito = (prodId) => {
 
     carrito.splice(indice, 1) 
     actualizarCarrito() 
-    console.log(carrito)
+    
 }
 
 const actualizarCarrito = () => {
