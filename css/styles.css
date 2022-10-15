@@ -4,13 +4,28 @@ font-family: 'Bebas Neue', cursive;
 font-family: 'Inconsolata', monospace;
 font-family: 'Righteous', cursive;
 
+font-family: 'Caveat', cursive;
+font-family: 'Inconsolata', monospace;
+font-family: 'Silkscreen', cursive;
+
 #212121;// negro 33
 #350808 // burdeos muy oscuro para hovers */
 
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Inconsolata:wght@600&family=Silkscreen&display=swap');
 
-
+@keyframes anima-nav {
+    0% {
+      background-color: #f2ff00; }
+    25% {
+      background-color: #74d10a; }
+    50% {
+      background-color: #1decbb; }
+    75% {
+      background-color: #e818ef; }
+    100% {
+      background-color: #1eb6ee; } }
 *, 
 *::after,
 *::before {
@@ -47,6 +62,7 @@ li {
     align-items: center;
 }
 
+
 /*-----header y primera barra de nav-----*/
 
 .header{
@@ -59,14 +75,26 @@ li {
     font-size: 20px;
     color: white;
 }
+
 .top-nav div{
     justify-content: space-between;
     height: 70px;
 }
+.logo-index{
+    font-family: 'Bebas Neue', cursive;
+    color: #212121;
+    font-size:50px;
+    padding:20px;
+    animation-name: anima-nav;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; }
+
 .top-nav a{
-    padding:0 10px;
+    padding:0px 10px;
     color: white;
+  
 }
+
 
 /*----- nav y iconos de acceso -----*/
 
@@ -607,6 +635,35 @@ carrito-cantidad{
     cursor:pointer;
 }
 
+#boton-carrito {
+    border: none;
+    color: royalblue;
+    font-size: 40px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px 20px;
+    transition: all .3s;
+}
+#boton-carrito:hover {
+    cursor: pointer;
+    color: white;
+    background-color: royalblue;
+}
+#boton-carrito:focus {
+    outline: none;
+}
+
+#contenedor-productos {
+    max-width: 1200px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+p {
+    line-height: 1.8;
+}
 
 .cart-remove{
     
@@ -643,3 +700,14 @@ footer-titulo{
     background-color:yellow;
 
 }
+
+/*--animacion titulos*/
+
+@keyframes anima-letra1 {
+    0%   {left:0px; top:0px;}
+    25%  {left:10px; top:0px;}
+    50%  { left:10px; top:0px;}
+    75%  {left:20; top:0px;}
+    100% { left:-10px; top:0px;}
+    
+  }

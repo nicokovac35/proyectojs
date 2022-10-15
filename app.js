@@ -1,42 +1,63 @@
-const divProductos =document.getElementById("divProductos")
 
-fetch('./json/productos.json')
-.then(response => response.json())
-.then(productos => {
-    productos.forEach((producto, indice) => {
-        divProductos.innerHTML += `
-        <div class="card" id="producto${indice}" style="width: 18rem;top:18 rem;margin:5px;">
+
+const contenedorProductos = document.getElementById('contenedor-productos')
+
+//TERCER PASO
+
+const contenedorCarrito = document.getElementById('carrito-contenedor')
+//SEXTO PASO
+const botonVaciar = document.getElementById('vaciar-carrito')
+//SEXTIMO PASO, MODIFICAR LOS CONTADORES
+const contadorCarrito = document.getElementById('contadorCarrito')
+
+//OCTAVO PASO
+const cantidad = document.getElementById('cantidad')
+const precioTotal = document.getElementById('precioTotal')
+const cantidadTotal = document.getElementById('cantidadTotal')
+
+let carrito = []
+
+document.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('carrito')){
+        carrito = JSON.parse(localStorage.getItem('carrito'))
+        actualizarCarrito()
+    }
+})
+//SEXTO PASO
+botonVaciar.addEventListener('click', () => {
+    carrito.length = 0
+    actualizarCarrito()
+})
+
+//PRIMER PRIMER PASO, INYECTAR EL HTML
+stockProductos.forEach((producto) => {
+    const div = document.createElement('div')
+    div.classList.add('producto')
+    div.innerHTML = `
+   
         <img src="./img/${producto.img}" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">${producto.nombre}</h5>
-                <p class="card-text">Marca:${producto.marca}</p>
-                <p class="card-text">Precio:${producto.precio}</p>
-                <p class="card-text">Stock: ${producto.stock}</p>
-
-                <ul class="iconos2">
-                    <li><i id="click-corazon" class='bx bx-heart-circle' ></i></li>
-                    <li><i class='bx bx-search'></i></li>
-                    <li><i class='bx bxs-cart-add'></i></li>
-                </ul>
-                <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
-            
-        </div>
-    </div>
-
+    <h3>${producto.nombre}</h3>
     
-        `
-        divProductos.appendChild(div)
+    <p>Talla: ${producto.talle}</p>
+    <p class="precioProducto">Precio:$ ${producto.precio}</p>
+    <button id="agregar${producto.id}" class="boton-agregar"></i>Agregar </button>
 
-        const boton = document.getElementById(`agregar${producto.id}`)
+    `
+    contenedorProductos.appendChild(div)
 
-        boton.addEventListener('click', () => {
-            
-            agregarAlCarrito(producto.id)
-            
-});
+   
+
+
+
+    const boton = document.getElementById(`agregar${producto.id}`)
+    
+    boton.addEventListener('click', () => {
+        //esta funcion ejecuta el agregar el carrito con la id del producto
+        agregarAlCarrito(producto.id)
+        //
+    })
 })
 
-})
 // 1- PRIMER PASO
 
 //AGREGAR AL CARRITO
@@ -91,14 +112,15 @@ const actualizarCarrito = () => {
         const div = document.createElement('div')
         div.className = ('productoEnCarrito')
         div.innerHTML = `
+        <img src="./img/${prod.img}" class="card-img-top" alt="...">
         <p>${prod.nombre}</p>
         <p>Precio:$${prod.precio}</p>
-        <p>Cantidad: <span id="cantidad">${prod.cantidad}</span></p>
+        <p>Talla: <span id="cantidad">${prod.talle}</span></p>
         <button onclick="eliminarDelCarrito(${prod.id})" class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
         `
 
         contenedorCarrito.appendChild(div)
-        
+        //LocalStorage
         localStorage.setItem('carrito', JSON.stringify(carrito))
 
     })
@@ -106,7 +128,7 @@ const actualizarCarrito = () => {
     contadorCarrito.innerText = carrito.length // actualizamos con la longitud del carrito.
     //OCTAVO PASO
     console.log(carrito)
-    precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0)
+    precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.stock * prod.precio, 0)
     //Por cada producto q recorro en mi carrito, al acumulador le suma la propiedad precio, con el acumulador
     //empezando en 0.
 
