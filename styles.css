@@ -218,7 +218,7 @@ p {
     width:100px;
 }
 .productoEnCarrito:hover {
-    border-left: 5px solid royalblue;
+    border-left: 5px solid yellow;
 }
 
 .boton-eliminar {
@@ -252,6 +252,23 @@ p {
   #myBtn:hover {
     background-color: yellow;
     color:#212121;
+  }
+
+  .boton-compraya{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    font-size: 26px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+
   }
 
  /*Banner Final el que aparece en la portada */
