@@ -23,13 +23,15 @@ document.addEventListener('DOMContentLoaded', () => {
         actualizarCarrito()
     }
 })
-
+// vaciar el carrito
 botonVaciar.addEventListener('click', () => {
     carrito.length = 0
     actualizarCarrito()
 })
 
-//PRIMER PRIMER PASO, INYECTAR EL HTML
+
+
+// Datos de los productos 
 stockProductos.forEach((producto) => {
     const div = document.createElement('div')
     div.classList.add('producto')
@@ -40,7 +42,7 @@ stockProductos.forEach((producto) => {
     
     <p>Talla: ${producto.talle}</p>
     <p class="precioProducto">Precio:$ ${producto.precio}</p>
-    <button id="ver${producto.id}" class="boton-ver">Ver MAS</button>
+    <button id="#favoritos${producto.id}" class="boton-favoritos">Favoritos</button>
     <button id="agregar${producto.id}" class="boton-agregar"></i>Agregar </button>
 
     `
@@ -94,7 +96,7 @@ const eliminarDelCarrito = (prodId) => {
 }
 
 const actualizarCarrito = () => {
-    
+    // lo que se muestra en el carrito
     contenedorCarrito.innerHTML = "" 
     carrito.forEach((prod) => {
         const div = document.createElement('div')

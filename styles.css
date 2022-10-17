@@ -52,6 +52,8 @@ img {
 /*---Iconos, logi-buscador-favoritos-carrito*/
 
 
+/* estilos a los producots de json*/
+
 
 #boton-carrito {
     border: none;
@@ -100,7 +102,21 @@ p {
     font-size: 30px;
     font-weight: 50px;
     padding: 5px 70px;
-    border: black solid 1px;
+    border: none;
+}
+.boton-favoritos{
+    font-family: 'Bebas Neue', cursive;
+    background-color: #fff;
+    color: #212121;
+    font-size: 26px;
+    font-weight: 50px;
+    padding: 5px 70px;
+    border:none;
+}
+.boton-favoritos:hover{
+    cursor: pointer;
+    background-color:pink;
+
 }
 .boton-agregar:hover {
     cursor: pointer;
@@ -110,6 +126,12 @@ p {
 .boton-agregar:focus {
     outline: none;
 }
+
+.boton-favoritos:focus{
+    outline: none;
+}
+
+
 
 /*--Modal del carrito */
 
@@ -232,7 +254,7 @@ p {
     color:#212121;
   }
 
- /*Banner Final */
+ /*Banner Final el que aparece en la portada */
 
  .bannerfinal{
     position: fixed;

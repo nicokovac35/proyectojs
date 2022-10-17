@@ -1,5 +1,8 @@
 
-    $('#ver').on('click',function(){
+
+
+
+    $('#favoritos').on('click',function(){
  	
  
       Swal.fire(
